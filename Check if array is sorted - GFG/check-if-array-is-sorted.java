@@ -35,7 +35,7 @@ class Solution {
         if(n==1) {
             return true;
         }
-        if(arr[n-1]>=arr[n-2]) {
+        if(arr[n-1] >= arr[n-2]) {
             return arraySortedOrNot(arr, n-1);
         }
         return false;
