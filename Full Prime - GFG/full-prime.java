@@ -36,9 +36,7 @@ class Solution{
 	    return ans;
 	}
 	static int checkPrime(int N) {
-	   // int count=0;
-	   
-	    if(N==0) {
+	   if(N==0) {
 	        return 1;
 	    }
 	    else {
@@ -46,11 +44,7 @@ class Solution{
 	        N/=10;
 	        if(rem==1 || rem==0) {
 	            return 0;
-	           // count++;
 	        }
-	       // if(rem==2) {
-	       //     return 1;
-	       // }
 	        for(int i=2 ; i*i<=rem ; i++) {
 	            if(rem%i==0) {
 	                return 0;
@@ -58,6 +52,5 @@ class Solution{
 	        }
 	        return checkPrime(N);
 	    }
-	   // return count;
 	}
 }
