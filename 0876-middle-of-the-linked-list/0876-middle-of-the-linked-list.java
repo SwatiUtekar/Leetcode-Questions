@@ -11,7 +11,7 @@
 class Solution {
     public ListNode middleNode(ListNode head) {
         ListNode temp = head;
-        int count=1;
+        int count=0;
         while(temp!=null) {
             temp=temp.next;
             count++;
@@ -20,7 +20,7 @@ class Solution {
         ListNode temp2 = head;
         int mid;
         if(count%2==0) {
-            mid=count/2 - 1;
+            mid=count/2;
             while(mid!=0) {
                 temp2=temp2.next;
                 mid--;
