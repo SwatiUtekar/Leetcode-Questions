@@ -23,7 +23,7 @@ public class Solution {
         while(count!=0) {
             ListNode tempB = headB;
             while(tempB!=null) {
-                if(tempA==tempB && tempA.next==tempB.next) {
+                if(tempA==tempB) {
                     return tempA;
                 }
                 tempB = tempB.next;
