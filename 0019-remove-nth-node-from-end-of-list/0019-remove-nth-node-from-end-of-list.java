@@ -20,7 +20,7 @@ class Solution {
             tempN--;
         }
         
-        ListNode temp = head;
+        ListNode temp = dummy.next;
         while(fast.next!=null) {
             slow = slow.next;
             fast = fast.next;
