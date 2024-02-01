@@ -35,7 +35,6 @@ class Solution {
         
         if(carry==1) {
             temp.next = new ListNode(1);
-            temp=temp.next;
         }
         
         return dummy.next;
