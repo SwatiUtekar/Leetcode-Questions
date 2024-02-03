@@ -21,10 +21,12 @@ class Solution {
             temp1=temp1.next;
         }
         
-//      
+//      Check whether count or k is zero if yes then return head
         if(count==0 || k==0) {
             return dummy.next;
         }
+        
+//         Check whether k is greater than size and update rotation number accordingly
         int time=0;
         if(k>=count) {
             time = count - (k%count);
@@ -32,6 +34,7 @@ class Solution {
             time = count - k;
         }
         
+//         Make Rotation
         ListNode temp2 = dummy.next;
         ListNode temp = new ListNode(0);
         while(time>0) {
