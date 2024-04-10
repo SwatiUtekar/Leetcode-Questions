@@ -7,11 +7,13 @@ class Solution {
             // push
             if(c=='(' || c=='[' || c=='{') {
                 st.push(c);
-            }else if((c==')' && !st.empty() && st.peek()=='(') || 
+            }
+            else if((c==')' && !st.empty() && st.peek()=='(') || 
             (c==']' && !st.empty() &&st.peek()=='[') || 
             (c=='}' && !st.empty() && st.peek()=='{')) {
                 st.pop();
-            }else {
+            }
+            else {
                 return false;
             }
         }
