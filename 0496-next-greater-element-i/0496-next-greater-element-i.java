@@ -10,8 +10,7 @@ class Solution {
                 if(nums1[i]==nums2[j]) {
                     val=nums2[j];
                     idx=j;
-                    // ans[i]=val;
-                    // ans[i]=nums2[j];
+                    break;
                 }
             }
             while(idx<nums2.length) {
@@ -21,15 +20,10 @@ class Solution {
                     break;
                 }
                 idx++;
-                // break;
-                // idx++;
             }
             if(count==0) {
                 ans[i]=-1;
             }
-            // ans[i]=idx;
-            
-            // ans[i]=val;
         }
         return ans;
     }
